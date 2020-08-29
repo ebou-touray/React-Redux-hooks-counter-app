@@ -1,13 +1,14 @@
-import React from 'react';
-import './App.css';
-import Counter from './containers/Counter';
+import React from "react";
+import Counter from "./containers/Counter";
+import Results from "./containers/Results";
 
-const  App = () => {
+const App = () => {
   return (
-    <div className="App">
-    <Counter/>
+    <div>
+      <Counter />
+      <Results />
     </div>
   );
-}
+};
 
 export default App;
