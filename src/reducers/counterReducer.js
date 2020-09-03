@@ -9,7 +9,7 @@ const reducer = (state = initialState, action) => {
     case actionTypes.ADD:
       return { ...state, counter: state.counter + action.value };
     case actionTypes.REMOVE:
-      return { ...state, counter: state.counter + action.value };
+      return { ...state, counter: state.counter - action.value };
     case actionTypes.RESET:
       return { ...state, counter: 0 };
   }
